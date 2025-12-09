@@ -36,7 +36,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="container-wide px-6 md:px-12 lg:px-24 relative z-10">
+      <div className="container-wide px-6  md:px-12 lg:px-24 relative z-10">
         <div className="max-w-4xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
