@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark Green + Butter Yellow Palette */
+    --background: 46 60% 94%;
+    --foreground: 173 100% 11%;
+
+    --card: 46 60% 96%;
+    --card-foreground: 173 100% 11%;
+
+    --popover: 46 60% 96%;
+    --popover-foreground: 173 100% 11%;
+
+    --primary: 173 100% 11%;
+    --primary-foreground: 46 100% 83%;
+
+    --secondary: 46 100% 83%;
+    --secondary-foreground: 173 100% 11%;
+
+    --muted: 46 40% 90%;
+    --muted-foreground: 173 50% 30%;
+
+    --accent: 46 100% 83%;
+    --accentback: 46 100% 78%;
+    --accent-foreground: 173 100% 11%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 173 30% 80%;
+    --input: 173 30% 80%;
+    --ring: 173 100% 11%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --cream: 46 60% 94%;
+    --cream-dark: 46 50% 88%;
+    --forest: 173 100% 11%;
+    --forest-light: 173 60% 20%;
+    --butter: 46 100% 83%;
+    --butter-light: 46 100% 90%;
+
+    /* Typography */
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+    /* Animations */
+    --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .dark {
+    --background: 173 100% 6%;
+    --foreground: 46 60% 94%;
+
+    --card: 173 80% 8%;
+    --card-foreground: 46 60% 94%;
+
+    --popover: 173 80% 8%;
+    --popover-foreground: 46 60% 94%;
+
+    --primary: 46 100% 83%;
+    --primary-foreground: 173 100% 11%;
+
+    --secondary: 173 60% 20%;
+    --secondary-foreground: 46 60% 94%;
+
+    --muted: 173 50% 15%;
+    --muted-foreground: 46 40% 70%;
+
+    --accent: 46 100% 83%;
+    --accentback: 46 100% 78%;
+    --accent-foreground: 173 100% 11%;
+
+    --border: 173 50% 20%;
+    --input: 173 50% 20%;
+    --ring: 46 100% 83%;
+  }
+
+  * {
+    /* @apply border-border; */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-forest-light;
+  }
+
+  .section-padding {
+    @apply px-6 md:px-12 lg:px-24 py-20 md:py-32;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .link-underline {
+    @apply relative inline-block;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-0.5 bg-accent scale-x-0 origin-right transition-transform duration-300;
+  }
+
+  .link-underline:hover::after {
+    @apply scale-x-100 origin-left;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.4s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slide-in-right 0.5s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.5s ease-out forwards;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scale-in {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slide-in-right {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slide-in-left {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
