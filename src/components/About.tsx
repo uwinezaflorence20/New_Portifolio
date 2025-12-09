@@ -5,9 +5,9 @@ import { GraduationCap } from "lucide-react";
 
 const education = [
   {
-    degree: "Bachelor of Science in Software Engineering",
-    institution: "Adventist University of Central Africa (AUCA)",
-    period: "2023 - Present",
+    degree: "Bachelor of Science in Computer Science",
+    institution: "University of Rwanda",
+    period: "2022 - Present",
     description: "Focusing on software engineering, algorithms, and full-stack development.",
   },
   {
@@ -49,7 +49,7 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              I'm a passionate full-stack software engineer currently pursuing my degree in software Engineering. 
+              I'm a passionate full-stack software engineer and project manager with scrum master I currently pursuing my degree in computer science. 
               I love building scalable applications from database to UI, architecting robust backend systems, 
               and crafting intuitive user experiences.
             </p>
@@ -67,11 +67,11 @@ const About = () => {
               className="grid grid-cols-3 gap-6 p-8 bg-muted/50 rounded-2xl"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">3+</div>
+                <div className="text-3xl font-bold text-primary mb-1">4+</div>
                 <div className="text-sm text-muted-foreground">Years Coding</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-1">5+</div>
+                <div className="text-3xl font-bold text-primary mb-1">8+</div>
                 <div className="text-sm text-muted-foreground">Projects</div>
               </div>
               <div className="text-center">
