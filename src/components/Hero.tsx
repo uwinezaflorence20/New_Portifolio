@@ -63,7 +63,7 @@ const Hero = () => {
               transition={{ duration: 0.6, delay: 0.3 }}
               className="text-accent italic"
             >
-              Iris-Ghislaine
+              Florence
             </motion.span>
           </motion.h1>
 
@@ -109,17 +109,17 @@ const Hero = () => {
               {[
                 {
                   icon: Github,
-                  href: "https://github.com/Iris-Ghislaine",
+                  href: "https://github.com/uwinezaflorence20",
                   label: "GitHub",
                 },
                 {
                   icon: Linkedin,
-                  href: "https://www.linkedin.com/in/iris-ghislaine-ganza-188797334/",
+                  href: "https://www.linkedin.com/in/uwineza-florence-3b9463280/",
                   label: "LinkedIn",
                 },
                 {
                   icon: Mail,
-                  href: "mailto:irisghislaine7@gmail.com",
+                  href: "mailto:uwinezaflorence20@gmail.com",
                   label: "Mail",
                 },
               ].map((social, index) => (

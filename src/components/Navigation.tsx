@@ -42,7 +42,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Iris-Ghislaine
+            Florence.
           </motion.a>
 
           {/* Desktop Navigation - Centered */}
@@ -97,7 +97,7 @@ const Navigation = () => {
             <div className="flex flex-col h-full p-6">
               <div className="flex justify-between items-center">
                 <span className="font-serif text-2xl font-bold text-primary-foreground">
-                  Portfolio
+                  Florence.
                 </span>
                 <Button
                   variant="ghost"
