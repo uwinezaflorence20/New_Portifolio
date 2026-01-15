@@ -7,6 +7,7 @@ import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { useToast } from "../hooks/use-toast";
 import { z } from "zod";
+import emailjs from '@emailjs/browser';
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters").max(100),
@@ -68,16 +69,27 @@ const Contact = () => {
 
     try {
       contactSchema.parse(formData);
-      
-      // Simulate form submission
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
+
+      // Send email using EmailJS
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: 'uwinezaflorence20@gmail.com',
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
       setIsSubmitted(true);
       toast({
         title: "Message sent!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
-      
+
       setFormData({ name: "", email: "", subject: "", message: "" });
       setTimeout(() => setIsSubmitted(false), 3000);
     } catch (error) {
@@ -89,6 +101,12 @@ const Contact = () => {
           }
         });
         setErrors(fieldErrors);
+      } else {
+        toast({
+          title: "Error sending message",
+          description: "Please try again later or contact me directly.",
+          variant: "destructive",
+        });
       }
     } finally {
       setIsSubmitting(false);
