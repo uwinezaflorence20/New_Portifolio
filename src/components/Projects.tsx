@@ -8,101 +8,68 @@ import useEmblaCarousel from "embla-carousel-react";
 const projects = [
   {
     id: 1,
-    title: "Personal Note Management",
+    title: "Gaming Website",
     description:
-      "A comprehensive web application for managing personal notes with full CRUD operations. Built with React.js, Tailwind CSS, and Spring Boot backend.",
-    tags: ["React", "TypeScript","Tailwindcss","springBoot","postgress"],
-    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&q=80",
-    liveUrl: "#",
-    githubUrl: "https://github.com/Iris-Ghislaine/Personal-Note-Management-System",
+      "a website design for the gaming website. it is the user interface",
+    tags: ["React","Tailwindcss","css"],
+    image:"/public/1.png",
+    liveUrl: "https://glittery-rabanadas-281466.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/Gaming-website.git",
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Elegant backend project",
     description:
-      "A collaborative task management application with real-time updates and storing data in firebase.",
-    tags: ["Next.js",  "firebase"],
+      "A collaborative Elegant backend project for the local home furniture seller.",
+    tags: ["postgress",  "java","springboot"],
     image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
-    liveUrl: "https://github.com/Iris-Ghislaine/task-management-firebase",
-    githubUrl: "https://task-management-firebase.netlify.app/login",
+    liveUrl: "https://elegant-be.onrender.com/",
+    githubUrl: "https://github.com/uwinezaflorence20/Elegant_E-commerce_project_backend.git",
   },
     {
     id: 2,
-    title: "To-Do App",
+    title: "UR Digital suggestion ",
     description:
-      "A collaborative to do application with real-time updates and drag and drop functionality.",
+      "A collaborative University of Rwanda suggestion box.",
     tags: ["reactjs"],
-    image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?w=800&q=80",
-    liveUrl: "https://to-do-reactjs-ap.netlify.app/",
-    githubUrl: "https://github.com/Iris-Ghislaine/to-do-app-in-reactJS",
+    image: "/public/image.png",
+    liveUrl: "https://digital-suggestion-box-project-34.onrender.com/",
+    githubUrl: "https://github.com/uwinezaflorence20/Digital_suggestion_box_project.git",
   },
   {
     id: 3,
-    title: "Nourishing Life (React Native)",
+    title: "London University",
     description:
-      "A mobile health application that recommends appropriate foods based on users' chronic diseases. Features personalized nutrition guidance and health tracking.",
-    tags: ["React Native", "SQLite"],
-    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&q=80",
-    githubUrl: "https://github.com/Iris-Ghislaine/Nourishing-Life-with-React-Native-",
+      "A clonning project of the London university user interface.",
+    tags: ["HTML", "Tailwind css"],
+    image: "/public/2.png",
+    liveUrl: "https://profound-biscochitos-fdd45f.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/London-University.git",
   },
-  // {
-  //   id: 4,
-  //   title: "Social Media App",
-  //   description:
-  //     "A modern social media application with real-time messaging and user authentication.",
-  //   tags: ["React Native", "Firebase", "Redux"],
-  //   image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&q=80",
-  //   liveUrl: "#",
-  //   githubUrl: "#",
-  // },
-  {
+    {
+    id: 4,
+    title: "Manchester University",
+    description:
+      "A clonning project of the Manchester university user interface.",
+    tags: ["HTML", "Tailwind css"],
+    image: "/public/3.png",
+    liveUrl: "https://scintillating-meringue-4dcf41.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/Manchester_University.git",
+  },
+    {
     id: 5,
-    title: "Movie Explorer App",
+    title: "London University",
     description:
-      "A modern, responsive single-page application built with React that allows users to explore movies and TV shows from the TVMaze API. Features include searching, filtering by genre, viewing detailed information, and managing a favorites list.",
-    tags: ["React vite", "tailwindcss", "local storage"],
-    image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?w=800&q=80",
-    liveUrl: "https://movie-explorer-appli.netlify.app/",
-    githubUrl: "https://github.com/Iris-Ghislaine/movie-explorer",
+      "A clonning project of the London university user interface.",
+    tags: ["HTML", "Tailwind"],
+    image: "/public/2.png",
+    liveUrl: "https://profound-biscochitos-fdd45f.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/London-University.git",
   },
-  {
-    id: 6,
-    title: "Nourishing Life (SwiftUI) - In Progress",
-    description:
-      "iOS version of the Nourishing Life app, currently in development. Features native iOS design patterns and enhanced user experience for Apple devices.",
-    tags: ["SwiftUI", "firebase"],
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80",
-    githubUrl: "https://github.com/Iris-Ghislaine/NourishingAppSwiftUI",
-  },
-  {
-    id: 7,
-    title: "BookSky",
-    description:
-      "A platform which fetchs books written by different authors and allow user to add books to favorite",
-    tags: ["", "html", "tailwindcss","js"],
-    image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=800&q=80",
-    liveUrl: "https://book-explorer-capstone.netlify.app/",
-    githubUrl: "https://github.com/Iris-Ghislaine/book-explorer-capstone",
-  },
-  {
-    id: 8,
-    title: "Rema-Blog",
-    description:
-      "A feature-rich, Medium-inspired blogging platform built with Next.js 14, Prisma, Supabase, and Cloudinary.",
-    tags: ["React", "AWS", "PostgreSQL"],
-    image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80",
-    liveUrl: "https://phase-2-capstone-2ui9.vercel.app/",
-    githubUrl: "https://github.com/Iris-Ghislaine/phase-2-capstone",
-  },
-  {
-    id: 9,
-    title: "Global Child Nutrition Analysis Project, 2025",
-    description:
-      " 2025 project analyzing child nutrition patterns across the world. The project leverages data cleaning, exploratory data analysis (EDA), and K-Means clustering to identify age-based nutritional trends, visualized through an interactive Power BI dashboard. The aim is to provide actionable insights for global health interventions.",
-    tags: ["Jupyter Notebook", "Python", "PowerBI"],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80",
-    githubUrl: "https://github.com/Iris-Ghislaine/global-child-nutrition-project-data-analysis",
-  },
+
+
+
+  
 ];
 
 const ProjectCard = ({
