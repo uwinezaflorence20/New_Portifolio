@@ -5,9 +5,8 @@ import { useRef } from "react";
 const frontendSkills = [
   { name: "Javascript", level: 98 },
   { name: "React / Next.js", level: 95 },
-  { name: "SwiftUI / UIkit", level: 95 },
   { name: "TypeScript", level: 92 },
-  { name: "Tailwind CSS", level: 90 },
+  { name: "Tailwind CSS", level: 98 },
 ];
 
 const backendSkills = [
@@ -15,7 +14,7 @@ const backendSkills = [
   { name: "java / springBoot", level: 90 },
   { name: "Node.js ", level: 90 },
   { name: "Python ", level: 85 },
-  { name: "PostgreSQL / MongoDB", level: 88 },
+  { name: "PostgreSQL / SqlLite", level: 88 },
   { name: "REST APIs", level: 92 },
 ];
 
@@ -31,6 +30,12 @@ const experience = [
     period: "May 2025 - Present",
     description: "I am currently attending TheGym trainning program. It is one of the most intensive program. it is about the full stack trainning. ",
   },
+   {
+    role: "Back-End trainning with Python",
+    company: "Alx Rwanda / Harambee program / EF / Master card program",
+    period: "March - May 2025 ",
+description: "Gained hands-on experience in backend development using Python, building and testing APIs, working with databases, and applying best practices for clean, scalable, and maintainable server-side applications.",
+  },
   {
     role: "Back-End Internship",
     company: "Igire Rwanda Organization / SheCanCode",
@@ -42,6 +47,12 @@ const experience = [
     company: "CMU Africa",
     period: "March - May 2025 ",
     description: "The CMU Bridge experience strengthened my technical skills, problem-solving abilities, and confidence through hands-on learning, collaboration, and exposure to real-world software development practices.",
+  },
+   {
+    role: "Front-End Training",
+    company: "Igire Rwanda Organization / SheCanCode",
+    period: "March - May 2025 ",
+    description: "Built responsive and user-friendly web interfaces using modern frontend technologies, focusing on clean UI design, usability, and smooth interaction with backend APIs.",
   },
 ];
 
