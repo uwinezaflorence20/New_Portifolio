@@ -4,16 +4,15 @@ import { useRef } from "react";
 
 const frontendSkills = [
   { name: "Javascript", level: 98 },
-  { name: "React ", level: 95 },
-  { name: "React Native ", level: 80 },
-  { name: "TypeScript", level: 72 },
+  { name: "React / Next.js", level: 95 },
+  { name: "SwiftUI / UIkit", level: 95 },
+  { name: "TypeScript", level: 92 },
   { name: "Tailwind CSS", level: 90 },
-  { name: "Android", level: 70 },
 ];
 
 const backendSkills = [
-  { name: "C / C++", level: 65 },
-  { name: "java / springBoot", level: 80 },
+  { name: "C / C++", level: 90 },
+  { name: "java / springBoot", level: 90 },
   { name: "Node.js ", level: 90 },
   { name: "Python ", level: 85 },
   { name: "PostgreSQL / MongoDB", level: 88 },
@@ -27,22 +26,22 @@ const devopsSkills = [
 
 const experience = [
   {
-    role: "Trainee ",
+    role: "Trainee",
     company: "TheGym Program",
     period: "May 2025 - Present",
-    description: "Full stack intensive program by the Germany company",
+    description: "I am currently attending TheGym trainning program. It is one of the most intensive program. it is about the full stack trainning. ",
   },
   {
-    role: "Front-End Trainee",
+    role: "Back-End Internship",
     company: "Igire Rwanda Organization / SheCanCode",
-    period: "Sept 2023 ",
-    description: "Studying JavaScript, its frameworks and libraries, and Next.js for building modern web applications. Experienced in using TypeScript for project development and Tailwind CSS for creating responsive, visually consistent UIs.",
+    period: "March - May 2025 ",
+    description: "Developed and maintained the Elegant Project backend using Java and Spring Boot, building RESTful APIs and ensuring reliable, scalable, and well-tested system functionality.",
   },
-  {
-    role: "Back-End Academic internship",
-    company: "Igire Rwanda Organization / SheCanCode",
-    period: " 2025 ",
-    description: "Studying JavaScript, its frameworks and libraries, and Next.js for building modern web applications. Experienced in using TypeScript for project development and Tailwind CSS for creating responsive, visually consistent UIs.",
+   {
+    role: "CMU Bridge Program",
+    company: "CMU Africa",
+    period: "March - May 2025 ",
+    description: "The CMU Bridge experience strengthened my technical skills, problem-solving abilities, and confidence through hands-on learning, collaboration, and exposure to real-world software development practices.",
   },
 ];
 
