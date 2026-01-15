@@ -21,14 +21,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "irisghislaine7@gmail.com",
-    href: "mailto:irisghislaine7@gmail.com",
+    value: "uwinezaflorence20@gmail.com",
+    href: "mailto:uwinezaflorence20@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+250 (789) 539659",
-    href: "tel:+250789539659",
+    value: "+250 (791) 348662",
+    href: "tel:+250791348662",
   },
   {
     icon: MapPin,

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef, useState, useEffect, useCallback } from "react";
+import { useRef, useState, useEffect, useCallback, useMemo } from "react";
 import { ExternalLink, Github, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import useEmblaCarousel from "embla-carousel-react";
@@ -26,8 +26,8 @@ const projects = [
     liveUrl: "https://elegant-be.onrender.com/",
     githubUrl: "https://github.com/uwinezaflorence20/Elegant_E-commerce_project_backend.git",
   },
-    {
-    id: 2,
+  {
+    id: 3,
     title: "UR Digital suggestion ",
     description:
       "A collaborative University of Rwanda suggestion box.",
@@ -37,7 +37,7 @@ const projects = [
     githubUrl: "https://github.com/uwinezaflorence20/Digital_suggestion_box_project.git",
   },
   {
-    id: 3,
+    id: 4,
     title: "London University",
     description:
       "A clonning project of the London university user interface.",
@@ -47,7 +47,7 @@ const projects = [
     githubUrl: "https://github.com/uwinezaflorence20/London-University.git",
   },
     {
-    id: 4,
+    id: 5,
     title: "Manchester University",
     description:
       "A clonning project of the Manchester university user interface.",
@@ -57,19 +57,36 @@ const projects = [
     githubUrl: "https://github.com/uwinezaflorence20/Manchester_University.git",
   },
     {
-    id: 5,
-    title: "London University",
+    id: 6,
+    title: "Kitchen design website",
     description:
-      "A clonning project of the London university user interface.",
+      "A clonning project of the kitchen design website user interface.",
     tags: ["HTML", "Tailwind"],
-    image: "/public/2.png",
-    liveUrl: "https://profound-biscochitos-fdd45f.netlify.app/",
-    githubUrl: "https://github.com/uwinezaflorence20/London-University.git",
+    image: "/public/4.png",
+    liveUrl: "https://effervescent-gumdrop-1c6602.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/Kitchen_website_tailwind_css.git",
   },
-
-
-
-  
+    {
+    id: 7,
+    title: "RSSB website",
+    description:
+      "A clonning project of the RSSB website user interface.",
+    tags: ["HTML", "Tailwind"],
+    image: "/public/6.png",
+    liveUrl: "https://relaxed-puffpuff-811608.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/RSSB-Project.git",
+  },
+    {
+    id: 8,
+    title: "Pennyslyvania university",
+    description:
+      "A clonning project of the Pennyslyvania university website user interface.",
+    tags: ["HTML", "Tailwind"],
+    image: "/public/7.png",
+    liveUrl: "https://incredible-cucurucho-05d41f.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/The-Gymn-Clonning-Gate.git",
+  },
+    
 ];
 
 const ProjectCard = ({
@@ -185,12 +202,10 @@ const Projects = () => {
 
   // Pagination dots
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
+  const scrollSnaps = useMemo(() => emblaApi?.scrollSnapList() || [], [emblaApi]);
 
   useEffect(() => {
     if (!emblaApi) return;
-
-    setScrollSnaps(emblaApi.scrollSnapList());
 
     const onSelect = () => {
       setSelectedIndex(emblaApi.selectedScrollSnap());
