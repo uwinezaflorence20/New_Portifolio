@@ -12,7 +12,7 @@ const projects = [
     description:
       "a website design for the gaming website. it is the user interface",
     tags: ["React","Tailwindcss","css"],
-    image:"/public/1.png",
+    image:"/1.png",
     liveUrl: "https://glittery-rabanadas-281466.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/Gaming-website.git",
   },
@@ -32,7 +32,7 @@ const projects = [
     description:
       "A collaborative University of Rwanda suggestion box.",
     tags: ["reactjs"],
-    image: "/public/image.png",
+    image: "/image.png",
     liveUrl: "https://digital-suggestion-box-project-34.onrender.com/",
     githubUrl: "https://github.com/uwinezaflorence20/Digital_suggestion_box_project.git",
   },
@@ -42,7 +42,7 @@ const projects = [
     description:
       "A clonning project of the London university user interface.",
     tags: ["HTML", "Tailwind css"],
-    image: "/public/2.png",
+    image: "/2.png",
     liveUrl: "https://profound-biscochitos-fdd45f.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/London-University.git",
   },
@@ -52,7 +52,7 @@ const projects = [
     description:
       "A clonning project of the Manchester university user interface.",
     tags: ["HTML", "Tailwind css"],
-    image: "/public/3.png",
+    image: "/3.png",
     liveUrl: "https://scintillating-meringue-4dcf41.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/Manchester_University.git",
   },
@@ -62,7 +62,7 @@ const projects = [
     description:
       "A clonning project of the kitchen design website user interface.",
     tags: ["HTML", "Tailwind"],
-    image: "/public/4.png",
+    image: "/4.png",
     liveUrl: "https://effervescent-gumdrop-1c6602.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/Kitchen_website_tailwind_css.git",
   },
@@ -72,7 +72,7 @@ const projects = [
     description:
       "A clonning project of the RSSB website user interface.",
     tags: ["HTML", "Tailwind"],
-    image: "/public/6.png",
+    image: "/6.png",
     liveUrl: "https://relaxed-puffpuff-811608.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/RSSB-Project.git",
   },
@@ -82,7 +82,7 @@ const projects = [
     description:
       "A clonning project of the Pennyslyvania university website user interface.",
     tags: ["HTML", "Tailwind"],
-    image: "/public/7.png",
+    image: "/7.png",
     liveUrl: "https://incredible-cucurucho-05d41f.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/The-Gymn-Clonning-Gate.git",
   },
