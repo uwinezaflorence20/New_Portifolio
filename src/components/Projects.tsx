@@ -8,85 +8,104 @@ import useEmblaCarousel from "embla-carousel-react";
 const projects = [
   {
     id: 1,
-    title: "Gaming Website",
+    title: "ELEGANT – E-Commerce Backend",
     description:
-      "a website design for the gaming website. it is the user interface",
-    tags: ["React","Tailwindcss","css"],
-    image:"/1.png",
-    liveUrl: "https://glittery-rabanadas-281466.netlify.app/",
-    githubUrl: "https://github.com/uwinezaflorence20/Gaming-website.git",
-  },
-  {
-    id: 2,
-    title: "Elegant backend project",
-    description:
-      "A collaborative Elegant backend project for the local home furniture seller.",
-    tags: ["postgress",  "java","springboot"],
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
+      "Developed the full backend for an e-commerce platform helping local Rwandan furniture makers sell their products online. Built RESTful APIs for authentication, user management, product listings, and data persistence using Java and Spring Boot.",
+    tags: ["Java", "Spring Boot", "PostgreSQL", "REST APIs"],
+    image: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&q=80",
     liveUrl: "https://elegant-be.onrender.com/",
     githubUrl: "https://github.com/uwinezaflorence20/Elegant_E-commerce_project_backend.git",
   },
   {
-    id: 3,
-    title: "UR Digital suggestion ",
+    id: 2,
+    title: "DS-BOX – Digital Suggestion Box",
     description:
-      "A collaborative University of Rwanda suggestion box.",
-    tags: ["reactjs"],
+      "An interactive web application enabling University of Rwanda students to submit suggestions to their leaders through a democratic voting system. Designed and developed the full frontend experience.",
+    tags: ["React.js", "JavaScript", "CSS", "UI/UX"],
     image: "/image.png",
     liveUrl: "https://digital-suggestion-box-project-34.onrender.com/",
     githubUrl: "https://github.com/uwinezaflorence20/Digital_suggestion_box_project.git",
   },
   {
-    id: 4,
-    title: "London University",
+    id: 3,
+    title: "EASY CHECKER – Campus Security App",
     description:
-      "A clonning project of the London university user interface.",
-    tags: ["HTML", "Tailwind css"],
+      "Designed the UI/UX for an interactive mobile application that helps University of Rwanda campus security quickly verify and check students entering the campus, improving security efficiency.",
+    tags: ["UI/UX Design", "Mobile App", "Figma"],
+    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80",
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 4,
+    title: "SEEKCONNECT – Lost & Found Platform",
+    description:
+      "An interactive web application connecting people who have lost documents or belongings with those who found them. Designed and developed the full frontend with a clean, accessible user interface.",
+    tags: ["React.js", "JavaScript", "UI/UX", "Tailwind CSS"],
+    image: "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?w=800&q=80",
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 5,
+    title: "GROW WATCH – AI Potato Disease Detector",
+    description:
+      "Collaborated in a team during the CMU Africa Bridge Program to train an AI system that detects potato diseases such as late blight, helping local Rwandan farmers prevent crop loss and improve agricultural productivity.",
+    tags: ["AI / ML", "Python", "Image Recognition", "Agriculture Tech"],
+    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800&q=80",
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    id: 6,
+    title: "Gaming Website UI",
+    description:
+      "A modern, immersive gaming website user interface built with React and Tailwind CSS, featuring animated components, dynamic layouts, and an engaging visual experience for gamers.",
+    tags: ["React", "Tailwind CSS", "CSS Animations"],
+    image: "/1.png",
+    liveUrl: "https://glittery-rabanadas-281466.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/Gaming-website.git",
+  },
+  {
+    id: 7,
+    title: "London University Clone",
+    description:
+      "A faithful recreation of the London University website interface showcasing responsive design skills and attention to layout detail using HTML and Tailwind CSS.",
+    tags: ["HTML", "Tailwind CSS", "Responsive Design"],
     image: "/2.png",
     liveUrl: "https://profound-biscochitos-fdd45f.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/London-University.git",
   },
-    {
-    id: 5,
-    title: "Manchester University",
+  {
+    id: 8,
+    title: "RSSB Website Clone",
     description:
-      "A clonning project of the Manchester university user interface.",
-    tags: ["HTML", "Tailwind css"],
-    image: "/3.png",
-    liveUrl: "https://scintillating-meringue-4dcf41.netlify.app/",
-    githubUrl: "https://github.com/uwinezaflorence20/Manchester_University.git",
-  },
-    {
-    id: 6,
-    title: "Kitchen design website",
-    description:
-      "A clonning project of the kitchen design website user interface.",
-    tags: ["HTML", "Tailwind"],
-    image: "/4.png",
-    liveUrl: "https://effervescent-gumdrop-1c6602.netlify.app/",
-    githubUrl: "https://github.com/uwinezaflorence20/Kitchen_website_tailwind_css.git",
-  },
-    {
-    id: 7,
-    title: "RSSB website",
-    description:
-      "A clonning project of the RSSB website user interface.",
-    tags: ["HTML", "Tailwind"],
+      "A pixel-perfect clone of the Rwanda Social Security Board (RSSB) website, demonstrating strong HTML/CSS skills and ability to replicate professional government web interfaces.",
+    tags: ["HTML", "Tailwind CSS", "UI Cloning"],
     image: "/6.png",
     liveUrl: "https://relaxed-puffpuff-811608.netlify.app/",
     githubUrl: "https://github.com/uwinezaflorence20/RSSB-Project.git",
   },
-    {
-    id: 8,
-    title: "Pennyslyvania university",
+  {
+    id: 9,
+    title: "Kitchen Design Website",
     description:
-      "A clonning project of the Pennyslyvania university website user interface.",
-    tags: ["HTML", "Tailwind"],
-    image: "/7.png",
-    liveUrl: "https://incredible-cucurucho-05d41f.netlify.app/",
-    githubUrl: "https://github.com/uwinezaflorence20/The-Gymn-Clonning-Gate.git",
+      "A clean and elegant kitchen design company website showcasing modern interior products, with a responsive layout and polished visual aesthetic using Tailwind CSS.",
+    tags: ["HTML", "Tailwind CSS", "Responsive"],
+    image: "/4.png",
+    liveUrl: "https://effervescent-gumdrop-1c6602.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/Kitchen_website_tailwind_css.git",
   },
-    
+  {
+    id: 10,
+    title: "Manchester University Clone",
+    description:
+      "A detailed UI clone of the University of Manchester website, demonstrating proficiency in replicating complex multi-section academic web layouts with Tailwind CSS.",
+    tags: ["HTML", "Tailwind CSS", "UI Cloning"],
+    image: "/3.png",
+    liveUrl: "https://scintillating-meringue-4dcf41.netlify.app/",
+    githubUrl: "https://github.com/uwinezaflorence20/Manchester_University.git",
+  },
 ];
 
 const ProjectCard = ({
