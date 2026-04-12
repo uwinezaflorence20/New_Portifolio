@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/uwinezaflorence20", label: "GitHub" },
-  { icon: Linkedin, href: "https://www.linkedin.com/in/florence-uwineza-123456789/", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/uwineza-florence-3b9463280/", label: "LinkedIn" },
   { icon: Mail, href: "mailto:uwinezaflorence20@gmail.com", label: "Mail" },
 ];
 
@@ -12,6 +12,7 @@ const quickLinks = [
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "Certificates", href: "#certificates" },
   { name: "Contact", href: "#contact" },
 ];
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Hero = () => {
@@ -73,8 +73,8 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-xl md:text-2xl text-primary-foreground/80 max-w-2xl mb-10 leading-relaxed"
           >
-            I create beautiful, fast, and scalable full-stack web applications.
-            My focus is clean code and impactful user experiences.
+            Full-stack developer skilled in React, Java, Spring Boot & PostgreSQL — building
+            reliable and user-friendly digital solutions that solve real-world problems.
           </motion.p>
 
           <motion.div
@@ -93,6 +93,21 @@ const Hero = () => {
               asChild
             >
               <a href="#contact">Get In Touch</a>
+            </Button>
+            <Button
+              variant="outline"
+              size="xl"
+              className="border-accent/60 text-accent/80 hover:bg-accent/10 hover:text-accent"
+              asChild
+            >
+              <a
+                href="/FLORENCE UWINEZA CV.docx (1).pdf"
+                download="Florence_Uwineza_CV.pdf"
+                className="inline-flex items-center gap-2"
+              >
+                <Download className="w-5 h-5" />
+                Download CV
+              </a>
             </Button>
           </motion.div>
 

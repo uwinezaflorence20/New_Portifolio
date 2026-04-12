@@ -21,38 +21,45 @@ const backendSkills = [
 const devopsSkills = [
   { name: "Linux / Shell Scripting", level: 85 },
   { name: "Git & GitHub", level: 95 },
+  { name: "Kubernetes & Cloud Native", level: 72 },
+  { name: "Postman / REST APIs", level: 90 },
 ];
 
 const experience = [
   {
-    role: "Trainee",
+    role: "Full-Stack Trainee",
     company: "TheGym Program",
-    period: "May 2025 - Present",
-    description: "I am currently attending TheGym trainning program. It is one of the most intensive program. it is about the full stack trainning. ",
-  },
-   {
-    role: "Back-End trainning with Python",
-    company: "Alx Rwanda / Harambee program / EF / Master card program",
-    period: "March - May 2025 ",
-description: "Gained hands-on experience in backend development using Python, building and testing APIs, working with databases, and applying best practices for clean, scalable, and maintainable server-side applications.",
+    period: "May 2025 – Present",
+    description:
+      "Currently enrolled in one of the most intensive full-stack development training programs, deepening expertise across frontend, backend, databases, and software engineering best practices.",
   },
   {
-    role: "Back-End Internship",
+    role: "Back-End Developer Intern",
     company: "Igire Rwanda Organization / SheCanCode",
-    period: "March - May 2025 ",
-    description: "Developed and maintained the Elegant Project backend using Java and Spring Boot, building RESTful APIs and ensuring reliable, scalable, and well-tested system functionality.",
+    period: "March – May 2025",
+    description:
+      "Built and maintained the backend of the Elegant e-commerce platform using Java and Spring Boot. Designed RESTful APIs for authentication, user management, and data persistence. Collaborated with frontend and QA teams, performed code reviews, debugging, and testing.",
   },
-   {
-    role: "CMU Bridge Program",
-    company: "CMU Africa",
-    period: "March - May 2025 ",
-    description: "The CMU Bridge experience strengthened my technical skills, problem-solving abilities, and confidence through hands-on learning, collaboration, and exposure to real-world software development practices.",
+  {
+    role: "CMU Africa Bridge Program",
+    company: "Carnegie Mellon University Africa",
+    period: "March – May 2025",
+    description:
+      "Completed an intensive bridge program that strengthened technical skills, problem-solving abilities, and collaborative development practices with exposure to real-world software engineering workflows.",
   },
-   {
-    role: "Front-End Training",
+  {
+    role: "Back-End Training – Python",
+    company: "ALX Rwanda / Harambee / EF / Mastercard Foundation",
+    period: "March – May 2025",
+    description:
+      "Gained hands-on experience in backend development with Python, building and testing APIs, working with databases, and applying best practices for clean, scalable, and maintainable server-side applications.",
+  },
+  {
+    role: "Front-End Developer Training",
     company: "Igire Rwanda Organization / SheCanCode",
-    period: "March - May 2025 ",
-    description: "Built responsive and user-friendly web interfaces using modern frontend technologies, focusing on clean UI design, usability, and smooth interaction with backend APIs.",
+    period: "2024",
+    description:
+      "Trained in building responsive, user-friendly web interfaces with modern frontend technologies (React.js, TypeScript, Tailwind CSS), focusing on clean UI design, accessibility, and API integration.",
   },
 ];
 
