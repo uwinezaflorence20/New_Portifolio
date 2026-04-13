@@ -58,9 +58,9 @@ const Contact = () => {
   });
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({});
 
-  // Initialise EmailJS once
+  // Initialise EmailJS once (v4 API requires object form)
   useEffect(() => {
-    emailjs.init(PUBLIC_KEY);
+    emailjs.init({ publicKey: PUBLIC_KEY });
   }, []);
 
   const handleChange = (
@@ -104,7 +104,7 @@ const Contact = () => {
         to_email: "uwinezaflorence20@gmail.com",
       };
 
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY);
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
 
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });

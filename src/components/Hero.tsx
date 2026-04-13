@@ -2,81 +2,79 @@ import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Download } from "lucide-react";
 import { Button } from "./ui/button";
 
+// Hero always uses the signature dark-green background regardless of theme.
+// All colours below are hardcoded so they stay visible in both light and dark mode.
+const HERO_BG   = "bg-[hsl(173,100%,11%)]";          // forest green always
+const TEXT_MAIN = "text-[hsl(46,100%,83%)]";          // butter yellow always
+const TEXT_SUB  = "text-[hsl(46,100%,83%)]/80";       // butter yellow 80%
+const TEXT_MUTE = "text-[hsl(46,100%,83%)]/60";       // butter yellow 60%
+
 const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-primary"
+      className={`min-h-screen flex items-center justify-center relative overflow-hidden ${HERO_BG}`}
     >
-      {/* Animated Background Elements */}
+      {/* Animated background blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-20 right-20 w-64 h-64 rounded-full bg-accent/10"
-          animate={{
-            scale: [1, 1.2, 1],
-            rotate: [0, 90, 0],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: "linear",
-          }}
+          className="absolute top-20 right-20 w-64 h-64 rounded-full bg-[hsl(46,100%,83%)]/10"
+          animate={{ scale: [1, 1.2, 1], rotate: [0, 90, 0] }}
+          transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
         />
         <motion.div
-          className="absolute bottom-40 left-20 w-96 h-96 rounded-full bg-accent/5"
-          animate={{
-            scale: [1.2, 1, 1.2],
-            rotate: [90, 0, 90],
-          }}
-          transition={{
-            duration: 25,
-            repeat: Infinity,
-            ease: "linear",
-          }}
+          className="absolute bottom-40 left-20 w-96 h-96 rounded-full bg-[hsl(46,100%,83%)]/5"
+          animate={{ scale: [1.2, 1, 1.2], rotate: [90, 0, 90] }}
+          transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
         />
       </div>
 
-      <div className="container-wide px-6  md:px-12 lg:px-24 relative z-10">
+      <div className="container-wide px-6 md:px-12 lg:px-24 relative z-10">
         <div className="max-w-4xl">
+
+          {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="mb-6"
           >
-            <span className="inline-block px-4 py-2 rounded-full bg-accent/20 text-accent text-sm font-medium tracking-wide">
+            <span className={`inline-block px-4 py-2 rounded-full bg-[hsl(46,100%,83%)]/20 ${TEXT_MAIN} text-sm font-medium tracking-wide`}>
               Software Engineer
             </span>
           </motion.div>
 
+          {/* Heading */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-5xl lg:text-8xl font-serif font-bold text-accent leading-tight mb-6"
+            className={`text-5xl md:text-5xl lg:text-8xl font-serif font-bold ${TEXT_MAIN} leading-tight mb-6`}
           >
-          I'm
+            I'm
             <br />
             <motion.span
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="text-accent italic"
+              className={`${TEXT_MAIN} italic`}
             >
               Florence
             </motion.span>
           </motion.h1>
 
+          {/* Sub-heading */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-primary-foreground/80 max-w-2xl mb-10 leading-relaxed"
+            className={`text-xl md:text-2xl ${TEXT_SUB} max-w-2xl mb-10 leading-relaxed`}
           >
-            Full-stack developer skilled in React, Java, Spring Boot & PostgreSQL — building
+            Full-stack developer skilled in React, Java, Spring Boot &amp; PostgreSQL — building
             reliable and user-friendly digital solutions that solve real-world problems.
           </motion.p>
 
+          {/* CTA buttons */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,7 +87,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="xl"
-              className="border-accent text-accent hover:bg-accent hover:text-primary"
+              className="border-[hsl(46,100%,83%)] text-[hsl(46,100%,83%)] hover:bg-[hsl(46,100%,83%)] hover:text-[hsl(173,100%,11%)]"
               asChild
             >
               <a href="#contact">Get In Touch</a>
@@ -97,7 +95,7 @@ const Hero = () => {
             <Button
               variant="outline"
               size="xl"
-              className="border-accent/60 text-accent/80 hover:bg-accent/10 hover:text-accent"
+              className="border-[hsl(46,100%,83%)]/60 text-[hsl(46,100%,83%)]/80 hover:bg-[hsl(46,100%,83%)]/10 hover:text-[hsl(46,100%,83%)]"
               asChild
             >
               <a
@@ -111,37 +109,24 @@ const Hero = () => {
             </Button>
           </motion.div>
 
+          {/* Social links */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex items-center gap-6"
           >
-            <span className="text-primary-foreground/60 text-sm">
-              Find me on
-            </span>
+            <span className={`${TEXT_MUTE} text-sm`}>Find me on</span>
             <div className="flex gap-4">
               {[
-                {
-                  icon: Github,
-                  href: "https://github.com/uwinezaflorence20",
-                  label: "GitHub",
-                },
-                {
-                  icon: Linkedin,
-                  href: "https://www.linkedin.com/in/uwineza-florence-3b9463280/",
-                  label: "LinkedIn",
-                },
-                {
-                  icon: Mail,
-                  href: "mailto:uwinezaflorence20@gmail.com",
-                  label: "Mail",
-                },
+                { icon: Github,   href: "https://github.com/uwinezaflorence20",                       label: "GitHub"   },
+                { icon: Linkedin, href: "https://www.linkedin.com/in/uwineza-florence-3b9463280/",    label: "LinkedIn" },
+                { icon: Mail,     href: "mailto:uwinezaflorence20@gmail.com",                         label: "Mail"     },
               ].map((social, index) => (
                 <motion.a
                   key={social.label}
                   href={social.href}
-                  className="w-10 h-10 rounded-full border border-accent/30 flex items-center justify-center text-accent hover:bg-accent hover:text-primary transition-all duration-300"
+                  className="w-10 h-10 rounded-full border border-[hsl(46,100%,83%)]/30 flex items-center justify-center text-[hsl(46,100%,83%)] hover:bg-[hsl(46,100%,83%)] hover:text-[hsl(173,100%,11%)] transition-all duration-300"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   initial={{ opacity: 0, y: 20 }}
@@ -157,12 +142,13 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll indicator */}
       <motion.a
         href="#about"
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-accent"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-[hsl(46,100%,83%)]"
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
+        aria-label="Scroll down"
       >
         <ArrowDown className="w-6 h-6" />
       </motion.a>

@@ -41,7 +41,9 @@ const Navigation = () => {
         <div className="container-wide flex items-center justify-between px-6 md:px-12 lg:px-24">
           <motion.a
             href="#home"
-            className="font-serif text-2xl font-bold text-primary"
+            className={`font-serif text-2xl font-bold transition-colors duration-300 ${
+              isScrolled ? "text-primary" : "text-[hsl(46,100%,83%)]"
+            }`}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -54,7 +56,11 @@ const Navigation = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary font-medium link-underline text-sm lg:text-base"
+                className={`font-medium link-underline text-sm lg:text-base transition-colors duration-300 ${
+                  isScrolled
+                    ? "text-foreground/80 hover:text-primary"
+                    : "text-[hsl(46,100%,83%)]/80 hover:text-[hsl(46,100%,83%)]"
+                }`}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 + 0.3 }}
@@ -69,7 +75,11 @@ const Navigation = () => {
             {/* Dark Mode Toggle */}
             <motion.button
               onClick={toggleTheme}
-              className="w-10 h-10 rounded-full border border-border flex items-center justify-center text-foreground/70 hover:text-primary hover:border-primary hover:bg-primary/5 transition-all duration-300"
+              className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all duration-300 ${
+                isScrolled
+                  ? "border-border text-foreground/70 hover:text-primary hover:border-primary hover:bg-primary/5"
+                  : "border-[hsl(46,100%,83%)]/50 text-[hsl(46,100%,83%)] hover:bg-[hsl(46,100%,83%)]/10"
+              }`}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -117,7 +127,11 @@ const Navigation = () => {
           <div className="flex md:hidden items-center gap-2">
             <button
               onClick={toggleTheme}
-              className="w-9 h-9 rounded-full border border-border flex items-center justify-center text-foreground/70 hover:text-primary transition-colors duration-300"
+              className={`w-9 h-9 rounded-full border flex items-center justify-center transition-colors duration-300 ${
+                isScrolled
+                  ? "border-border text-foreground/70 hover:text-primary"
+                  : "border-[hsl(46,100%,83%)]/50 text-[hsl(46,100%,83%)]"
+              }`}
               aria-label="Toggle dark mode"
             >
               <AnimatePresence mode="wait" initial={false}>
