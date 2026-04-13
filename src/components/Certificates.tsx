@@ -185,7 +185,7 @@ const Certificates = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="mt-16 grid grid-cols-3 gap-6 max-w-xl mx-auto"
+          className="mt-16 grid sm:grid-cols-3 gap-6 max-w-xl mx-auto"
         >
           {[
             { value: "11+", label: "Certificates" },

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { Mail, MapPin, Phone, Send, CheckCircle, AlertCircle } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -58,11 +58,6 @@ const Contact = () => {
   });
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({});
 
-  // Initialise EmailJS once (v4 API requires object form)
-  useEffect(() => {
-    emailjs.init({ publicKey: PUBLIC_KEY });
-  }, []);
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -104,7 +99,10 @@ const Contact = () => {
         to_email: "uwinezaflorence20@gmail.com",
       };
 
-      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams);
+      // Pass publicKey directly so no prior init() call is needed
+      await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, {
+        publicKey: PUBLIC_KEY,
+      });
 
       setStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
@@ -112,13 +110,21 @@ const Contact = () => {
 
       // Reset back to idle after 5 seconds
       setTimeout(() => setStatus("idle"), 5000);
-    } catch (err) {
+    } catch (err: unknown) {
       console.error("EmailJS error:", err);
+
+      // EmailJS throws an EmailJSResponseStatus object: { status, text }
+      const ejsErr = err as { status?: number; text?: string };
+      const detail =
+        ejsErr?.text
+          ? `(${ejsErr.status ?? "?"}: ${ejsErr.text})`
+          : String(err);
+
       setErrorMsg(
-        "Failed to send your message. Please try again or email me directly at uwinezaflorence20@gmail.com"
+        `Failed to send your message — ${detail}. Please email me directly at uwinezaflorence20@gmail.com`
       );
       setStatus("error");
-      setTimeout(() => setStatus("idle"), 6000);
+      setTimeout(() => setStatus("idle"), 8000);
     }
   };
 
