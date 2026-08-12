@@ -14,7 +14,7 @@ const backendSkills = [
   { name: "java / springBoot", level: 90 },
   { name: "Node.js ", level: 90 },
   { name: "Python ", level: 85 },
-  { name: "PostgreSQL / SqlLite", level: 88 },
+  { name: "PostgreSQL / MySQL / MongoDB", level: 88 },
   { name: "REST APIs", level: 92 },
 ];
 
@@ -27,9 +27,37 @@ const devopsSkills = [
 
 const experience = [
   {
-    role: "Full-Stack Trainee",
-    company: "TheGym Program",
-    period: "May 2025 – Present",
+    role: "Full Stack Developer Intern",
+    company: "Rwanda Digital Health Mentorship Program, ICT Chamber",
+    period: "2026 – Present",
+    description:
+      "Participating in a structured mentorship program focused on digital health innovation. Collaborating with mentors and fellows to build practical solutions for real-world healthcare challenges, and presenting project outcomes for feedback from industry professionals.",
+  },
+  {
+    role: "Data QA & Data Annotator",
+    company: "Neotix Robotics — Masoro, Kigali",
+    period: "May 2026 – Present",
+    description:
+      "Promoted from Robotics Operator based on performance. Review, validate, and correct collected data for accuracy and consistency, perform data annotation and labeling, and conduct QA checks to catch errors and incomplete annotations across datasets.",
+  },
+  {
+    role: "Robotics Operator",
+    company: "Neotix Robotics — Masoro, Kigali",
+    period: "May 2026 – July 2026",
+    description:
+      "Operated and monitored robotic systems to support daily operations, used robot arms to correct data for robot training, and assisted in testing and troubleshooting equipment following operational safety guidelines.",
+  },
+  {
+    role: "Document Specialist (Freelance)",
+    company: "Notary Kamaro Didier — Kicukiro, Kigali",
+    period: "2025 – Present",
+    description:
+      "Provide on-site document typing and formatting for a notary office on a regular session basis. Prepare and format official legal and office documents with high accuracy, handling sensitive documentation professionally.",
+  },
+  {
+    role: "Full Stack Developer",
+    company: "TheGym Rwanda",
+    period: "June 2025 – Present",
     description:
       "Currently enrolled in one of the most intensive full-stack development training programs, deepening expertise across frontend, backend, databases, and software engineering best practices.",
   },

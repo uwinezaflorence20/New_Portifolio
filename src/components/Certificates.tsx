@@ -87,8 +87,8 @@ const certificates = [
   },
   {
     title: "Drone Pilot Certificate",
-    issuer: "Rwanda Civil Aviation Authority",
-    year: "2024",
+    issuer: "GIZ and ACEIoT",
+    year: "2026",
     category: "Aviation & Tech",
     color: "bg-cyan-500/10 border-cyan-500/30 text-cyan-700",
     dot: "bg-cyan-500",
@@ -190,7 +190,7 @@ const Certificates = () => {
           {[
             { value: "11+", label: "Certificates" },
             { value: "5+", label: "Organizations" },
-            { value: "2023–2025", label: "Earned" },
+            { value: "2023–2026", label: "Earned" },
           ].map((stat) => (
             <div key={stat.label} className="text-center p-6 bg-muted/50 rounded-2xl">
               <div className="text-3xl font-bold text-primary mb-1">{stat.value}</div>
